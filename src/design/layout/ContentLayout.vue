@@ -1,7 +1,7 @@
 <template>
   <div class='flex items-center'>
     <div class='text-2xl text-blue-400 font-bold'>
-      TEST
+      Content.vue 가 나와야함.
     </div>
   </div>
 
