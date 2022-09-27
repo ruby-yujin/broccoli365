@@ -8,11 +8,11 @@ const routes = [
     children: [
       {
         path: '/non_verify',
-        // name: 'Patient',
+        name: 'NonVerify',
         children: [
           {
             path: '/non_verify',
-            component: () => import('@/design/view/non_verify/step01.vue'),
+            component: () => import('@/design/view/non-verify/step01.vue'),
           },
         ],
       },
