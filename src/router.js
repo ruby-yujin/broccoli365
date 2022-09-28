@@ -4,18 +4,22 @@ const routes = [
   {
     path: '/',
     name: 'Intro',
-    component: () => import('@/design/view/index.vue'),
+    component: () => import('@/design/view/index.vue')
+  },
+  {
+    path: '/nonVerify',
+    component: () => import('@/design/view/nonVerify/step01.vue'),
     children: [
       {
-        path: '/non_verify',
-        name: 'NonVerify',
-        children: [
-          {
-            path: '/non_verify',
-            component: () => import('@/design/view/non-verify/step01.vue'),
-          },
-        ],
+        path: 'step01'
+        // component: UserProfile,
       },
+      {
+        // UserPosts will be rendered inside User's <router-view>
+        // when /user/:id/posts is matched
+        path: 'posts'
+        // component: UserPosts,
+      }
     ]
   }
 ]
