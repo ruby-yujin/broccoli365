@@ -48,11 +48,7 @@
             />
           </div>
           <div class="carousel-item float-left w-full">
-            <img
-              src="/images/nonVerify/icon_oh.png"
-              alt=""
-              class="block mx-auto"
-            />
+            <img src="/images/icon_oh.png" alt="" class="block mx-auto" />
           </div>
         </div>
       </div>
