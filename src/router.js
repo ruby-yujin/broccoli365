@@ -1,4 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
+import NonVerifyStep01 from '@/design/view/nonVerify/step01.vue'
+import NonVerifyStep02 from '@/design/view/nonVerify/step02.vue'
 
 const routes = [
   {
@@ -8,19 +10,21 @@ const routes = [
   },
   {
     path: '/nonVerify',
-    component: () => import('@/design/view/nonVerify/step01.vue'),
+    component: () => import('@/design/layout/ContentLayout.vue'),
     children: [
       {
-        path: 'step01'
-        // component: UserProfile,
+        path: 'step01',
+        component: NonVerifyStep01
       },
       {
-        // UserPosts will be rendered inside User's <router-view>
-        // when /user/:id/posts is matched
-        path: 'posts'
-        // component: UserPosts,
+        path: 'step02',
+        component: NonVerifyStep02
       }
     ]
+  },
+  {
+    path: '/login',
+    component: () => import('@/design/view/login/index.vue')
   }
 ]
 

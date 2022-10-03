@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "node-sass": "^7.0.3",
-    "sass-loader": "7.3.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "tw-elements": "^1.0.0-alpha12",
     "vue": "^3.2.37",
     "vue-router": "^4.1.5",
     "vue-styled-components": "^1.6.0"
