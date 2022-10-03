@@ -12,7 +12,12 @@
       <button class="rounded-full btn-lang mx-auto">한국어</button>
       <button class="rounded-full btn-lang mx-auto">English</button>
     </div>
-    <button class="btn-bottom max-w-md">Next</button>
+    <button
+      class="btn-bottom max-w-md"
+      @click="$router.push('/nonVerify/step02')"
+    >
+      Next
+    </button>
   </div>
 </template>
 
