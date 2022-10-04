@@ -26,6 +26,12 @@
 <style lang="scss">
 .guide-line {
   border: 1px solid #eee;
+  padding: 4rem 0 1rem;
+  flex-wrap: wrap;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 .title {
   width: 90%;
@@ -80,12 +86,11 @@
 }
 .btn-wrap {
   width: 90%;
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  margin-top: auto;
 }
 .btn-prev {
   width: 30%;

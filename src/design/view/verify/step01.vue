@@ -47,6 +47,12 @@
 <style lang="scss">
 .guide-line {
   border: 1px solid #eee;
+  padding: 4rem 0 1rem;
+  flex-wrap: wrap;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 .title {
   font-size: 23px;
@@ -109,16 +115,15 @@ button + button {
 }
 
 .btn-wrap {
-  width: 80%;
-  position: absolute;
-  bottom: 0;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  margin-top: auto;
 }
 .btn-prev {
-  width: 25%;
+  width: 30%;
   height: 70px;
   font-size: 22px;
   font-weight: 500;
@@ -129,7 +134,7 @@ button + button {
   align-items: center;
 }
 .btn-next {
-  width: 74%;
+  width: 69%;
   height: 70px;
   background-color: #6cc902;
   color: #fff;

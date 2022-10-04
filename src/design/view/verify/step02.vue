@@ -7,7 +7,7 @@
       <h2 class="title text-center mx-auto">Enter your cell phone number</h2>
       <form action="">
         <div class="user-info">
-          <input type="text" value="0" />
+          <input type="text" value="0" class="w-full" />
         </div>
       </form>
     </div>
@@ -21,9 +21,13 @@
 <style lang="scss">
 .guide-line {
   border: 1px solid #eee;
+  flex-wrap: wrap;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 .title {
-  width: 90%;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.13;
@@ -42,12 +46,11 @@
 }
 .btn-wrap {
   width: 90%;
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  margin-top: auto;
 }
 .btn-prev {
   width: 30%;

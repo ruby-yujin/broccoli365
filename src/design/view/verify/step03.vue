@@ -3,24 +3,55 @@
     class="h-screen max-w-md mx-auto flex items-center justify-center relative guide-line"
   >
     <div class="wrap relative">
-      <img src="/images/icon_smile.png" alt="" class="block mx-auto" />
-      <h2 class="title text-center">Enter your cell phone number</h2>
-      <form action="">
-        <div class="user-info">
-          <input type="text" value="0" />
+      <!-- Modal -->
+      <div class="">
+        <button
+          type="button"
+          class="inline-block px-6 py-2.5 bg-blue-600 text-white"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModalSm"
+        >
+          Small modal
+        </button>
+      </div>
+
+      <div
+        class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        id="exampleModalSm"
+        tabindex="-1"
+        aria-modal="true"
+      >
+        <div class="modal-dialog modal-sm relative w-auto pointer-events-none">
+          <div class="modal-content">
+            <div class="modal-body relative p-4"></div>
+          </div>
         </div>
-      </form>
-    </div>
-    <div class="btn-wrap">
-      <button class="rounded-full btn-prev">Prev</button>
-      <button class="rounded-full btn-next">Next</button>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+.common-modal {
+  box-shadow: 0 0 10px 0 rgba(6, 44, 90, 0.12);
+  border: solid 1px #3d95ff;
+  background-color: #fff;
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    text-align: center;
+    color: #555;
+  }
+}
 .guide-line {
   border: 1px solid #eee;
+  padding: 4rem 0 1rem;
+  flex-wrap: wrap;
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 .title {
   font-size: 23px;
@@ -41,12 +72,11 @@
 }
 .btn-wrap {
   width: 90%;
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  margin-top: auto;
 }
 .btn-prev {
   width: 30%;

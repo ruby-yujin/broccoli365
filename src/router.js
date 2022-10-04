@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 //인증 전
 import NonVerifyStep01 from '@/design/view/nonVerify/step01.vue'
 import NonVerifyStep02 from '@/design/view/nonVerify/step02.vue'
+import NonVerifyStep03 from '@/design/view/nonVerify/step03.vue'
 
 //인증 후
 import VerifyStep01 from '@/design/view/verify/step01.vue'
@@ -30,8 +31,13 @@ const routes = [
         component: NonVerifyStep01
       },
       {
+        // [TODO] carousel
         path: 'step02',
         component: NonVerifyStep02
+      },
+      {
+        path: 'step03',
+        component: NonVerifyStep03
       }
     ]
   },
@@ -49,7 +55,7 @@ const routes = [
         component: VerifyStep02
       },
       {
-        //팝업
+        //[TODO] 팝업 modal
         path: 'step03',
         component: VerifyStep03
       },
