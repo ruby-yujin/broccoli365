@@ -3,16 +3,18 @@
     class="h-screen max-w-md mx-auto flex items-center justify-center relative guide-line"
   >
     <div class="wrap relative">
-      <img src="/images/icon_smile.png" alt="" class="block mx-auto" />
-      <h2 class="title text-center mx-auto">
-        Enter the verification code You have just received by Text message
-      </h2>
-      <form action="">
-        <div class="user-info">
-          <input type="text" value="0" />
-          <span class="timer">02:32</span>
+      <div class="nonverify-top-slide">
+        <div class="item">
+          <img src="" alt="" />
+          <div class="title-wrap">
+            <h3>Focus! Task</h3>
+            <p class="desc">
+              It is 9th day of yourCare <br />plan. Get active And enjoy a
+              healthy life.
+            </p>
+          </div>
         </div>
-      </form>
+      </div>
     </div>
     <div class="btn-wrap">
       <button class="rounded-full btn-prev">Prev</button>
@@ -24,42 +26,20 @@
 <style lang="scss">
 .guide-line {
   border: 1px solid #eee;
+  padding: 4rem 0 1rem;
+  flex-wrap: wrap;
 }
-.title {
-  width: 90%;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 1.13;
-  color: #555;
-  margin: 30px auto 40px;
-}
-.user-info {
-  text-align: center;
-  input {
-    text-align: center;
-    height: 50px;
-    border-bottom: 2px solid #3d95ff;
-    color: #555;
-    font-size: 20px;
-  }
-  .timer {
-    margin-top: 2rem;
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.11;
-    letter-spacing: -0.36px;
-    color: #3d95ff;
-  }
+.nonverify-top-slide {
+  height: 235px;
+  background-color: #3c95ff;
 }
 .btn-wrap {
   width: 90%;
-  position: absolute;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  margin-top: auto;
 }
 .btn-prev {
   width: 30%;

@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 import NonVerifyStep01 from '@/design/view/nonVerify/step01.vue'
 import NonVerifyStep02 from '@/design/view/nonVerify/step02.vue'
 import NonVerifyStep03 from '@/design/view/nonVerify/step03.vue'
+import NonVerifyStep04 from '@/design/view/nonVerify/step04.vue'
 
 //인증 후
 import VerifyStep01 from '@/design/view/verify/step01.vue'
@@ -38,6 +39,10 @@ const routes = [
       {
         path: 'step03',
         component: NonVerifyStep03
+      },
+      {
+        path: 'step04',
+        component: NonVerifyStep04
       }
     ]
   },
@@ -75,6 +80,10 @@ const routes = [
         path: 'step07',
         component: VerifyStep07
       }
+      // {
+      //   path: 'step08',
+      //   component: VerifyStep08
+      // }
     ]
   },
   {
