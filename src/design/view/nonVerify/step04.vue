@@ -3,6 +3,9 @@
     class="h-screen max-w-md mx-auto flex justify-center relative guide-line-02"
   >
     <div class="fulid-wrap relative">
+      <div class="floating-icon">
+        <img src="/images/icon_tongue.png" alt="icon" />
+      </div>
       <div class="nonverify-top-slide">
         <div class="item">
           <!-- [TODO 보내주신 이미지가 사이즈가 잘못됬습니다. 제가 임의 적용할테니 정방형 88px 로 변경필요합니다.] -->
@@ -64,6 +67,15 @@
 }
 .fulid-wrap {
   width: 100%;
+}
+.floating-icon {
+  width: 62px;
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  > img {
+    width: 100%;
+  }
 }
 .nonverify-top-slide {
   height: 270px;
