@@ -48,6 +48,10 @@ const routes = [
       {
         path: 'step05',
         component: NonVerifyStep05
+      },
+      {
+        path: 'step06',
+        component: NonVerifyStep06
       }
     ]
   },
