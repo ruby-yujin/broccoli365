@@ -5,6 +5,7 @@ import NonVerifyStep02 from '@/design/view/nonVerify/step02.vue'
 import NonVerifyStep03 from '@/design/view/nonVerify/step03.vue'
 import NonVerifyStep04 from '@/design/view/nonVerify/step04.vue'
 import NonVerifyStep05 from '@/design/view/nonVerify/step05.vue'
+import NonVerifyStep06 from '@/design/view/nonVerify/step06.vue'
 
 //인증 후
 import VerifyStep01 from '@/design/view/verify/step01.vue'
