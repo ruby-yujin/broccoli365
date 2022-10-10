@@ -22,27 +22,31 @@
         </div>
       </div>
       <div class="nonVerify-guide-content d-flex gap-y-2">
-        <div class="item-accordion">
+        <div class="item-accordion active">
           <div class="top">
             <h3>1주일 혈압 그래프</h3>
             <span class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                 />
               </svg>
             </span>
+          </div>
+          <div class="bottom">
+            <Line :chart-data="chartData" />
+            <p class="data-unit">(혈압 단위 : mmhg, 맥박 단위 : 회/분)</p>
           </div>
         </div>
         <div class="item-accordion">
           <div class="top">
             <h3>1주일 혈당 그래프</h3>
             <span class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                 />
               </svg>
             </span>
@@ -52,10 +56,10 @@
           <div class="top">
             <h3>1주일 체중(BMI) 그래프</h3>
             <span class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                 />
               </svg>
             </span>
@@ -65,10 +69,10 @@
           <div class="top">
             <h3>1주일 식단(영양) 그래프 <span>(열량표기)</span></h3>
             <span class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                 />
               </svg>
             </span>
@@ -78,10 +82,10 @@
           <div class="top">
             <h3>나에게 맞는 식단 가이드</h3>
             <span class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
+              <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
                 />
               </svg>
             </span>
@@ -254,9 +258,17 @@
               margin-left: auto;
               font-weight: 400;
               color: #000;
+              font-family: 'Noto Sans' !important;
             }
           }
         }
+      }
+      .data-unit {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 2.08;
+        color: #a2adba;
       }
     }
     &.active {
@@ -288,3 +300,46 @@
   }
 }
 </style>
+
+<script>
+import { Line } from 'vue-chartjs'
+import {
+  Chart as ChartJS,
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  PointElement,
+  CategoryScale,
+  LinearScale
+} from 'chart.js'
+
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  LineElement,
+  PointElement,
+  CategoryScale,
+  LinearScale
+)
+
+export default {
+  name: 'LineChart',
+  components: { Line },
+  data() {
+    return {
+      chartData: {
+        labels: ['19일', '20일', '21일', '22일', '23일', '24일'],
+        datasets: [
+          {
+            label: '1주일 혈압',
+            backgroundColor: '#3d95ff',
+            data: [0, 25, 50, 75, 100, 125, 150, 175, 200]
+          }
+        ]
+      }
+    }
+  }
+}
+</script>
