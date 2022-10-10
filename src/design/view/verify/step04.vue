@@ -59,7 +59,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 16px 0;
+  background: #fff;
 }
 .btn-prev {
   width: 30%;

@@ -3,7 +3,11 @@
     class="h-screen max-w-md mx-auto flex items-center justify-center relative guide-line"
   >
     <div class="wrap relative">
-      <img src="/images/icon_oh.png" alt="" class="block mx-auto" />
+      <img
+        src="/images/icon_oh.png"
+        alt="icon_oh"
+        class="block mx-auto top-icon-img"
+      />
       <h2 class="title text-center">Select the font size.</h2>
       <div class="select-font-size">
         <div class="item active">
@@ -27,7 +31,7 @@
             </svg>
           </span>
           <p class="text">
-            <strong>Medium size</strong>
+            <strong class="md-size">Medium size</strong>
             To be medium size
           </p>
         </div>
@@ -51,8 +55,11 @@
   flex-wrap: wrap;
 }
 .wrap {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
+}
+.top-icon-img {
+  width: 90px;
 }
 .title {
   font-size: 23px;
@@ -62,8 +69,6 @@
   margin: 30px 0 40px;
 }
 .select-font-size {
-  width: 80%;
-  margin: 0 auto;
   .item {
     border-radius: 15px;
     border: solid 1px #3d95ff;
@@ -86,9 +91,12 @@
 
       strong {
         display: block;
-        font-size: 20px;
+        font-size: 28px;
         color: #555;
         font-weight: 500;
+        &.md-size {
+          font-size: 20px;
+        }
       }
     }
     &.active {
@@ -117,10 +125,12 @@ button + button {
 .btn-wrap {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 35px 0;
+  padding: 16px 0;
   margin-top: auto;
+  gap: 0 10px;
+  background: #fff;
 }
 .btn-prev {
   width: 30%;

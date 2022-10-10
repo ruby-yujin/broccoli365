@@ -63,7 +63,7 @@
   flex-wrap: wrap;
 }
 .wrap {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 .preview-content {
@@ -114,10 +114,12 @@
 .btn-wrap {
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 35px 0;
+  padding: 16px 0;
   margin-top: auto;
+  gap: 0 10px;
+  background: #fff;
 }
 .btn-prev {
   width: 30%;
