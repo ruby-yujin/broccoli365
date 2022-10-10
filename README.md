@@ -1,12 +1,12 @@
 ## 작업내역
 
-- [첫 페이지] (https://broccoli365-nine.vercel.app/)
+- 첫 페이지 https://broccoli365-nine.vercel.app/
 - on_boarding( 언어선택, 프리뷰 )
-  - - [ ] 언어선택 :xd p3 (https://broccoli365-nine.vercel.app/nonVerify/step01)
+  - - [ ] 언어선택 :xd p3 https://broccoli365-nine.vercel.app/nonVerify/step01
   - - [ ] 인증전 - 1 :xd p4
-  - - [ ] 인증전 - 2 :xd p5
-  - - [ ] 인증전 - 3 :xd p6
-  - - [ ] 인증전 - 4 :xd p7
+  - - [ ] 인증전 - 2 :xd p5 https://broccoli365-nine.vercel.app/nonVerify/step03
+  - - [ ] 인증전 - 3 :xd p6 https://broccoli365-nine.vercel.app/nonVerify/step04
+  - - [ ] 인증전 - 4 :xd p7 https://broccoli365-nine.vercel.app/nonVerify/step05
   - - [ ] 인증전 - 5 :xd p8
 - 회원가입 및 개인인증처리
   - - [ ] list 1
@@ -35,4 +35,4 @@
 - MY ACCOUNT
 - SETTING(Alarm, fontsize, term&condition 등)
 - 한글버전\_로그인
-  - - [ ] 로그인 :xd page p1
+  - - [ ] 로그인 :xd page p1 https://broccoli365-nine.vercel.app/login
