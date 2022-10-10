@@ -47,7 +47,7 @@
             </div>
             <h3>혈당</h3>
             <p class="checked-data">150mg/dL</p>
-            <span class="icon-arrow">
+            <span class="icon-arrow isData">
               <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
