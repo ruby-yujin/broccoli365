@@ -361,7 +361,7 @@
   }
 }
 .bottom-gnb {
-  width: 100%;
+  max-width: 446px;
   display: flex;
   justify-content: space-between;
   align-items: center;
