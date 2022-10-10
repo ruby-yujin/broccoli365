@@ -29,7 +29,7 @@
 - 문진(17개)\_영문/한글
 
 - 오늘은?
-  - - [ ] 오늘은 첫페이지 :xd p19
+  - - [x] 오늘은 첫페이지 :xd p19 https://broccoli365-nine.vercel.app/today
 
 - 케어플랜
   - - [ ] care plan :xd p20
