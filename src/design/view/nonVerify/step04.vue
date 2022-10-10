@@ -94,14 +94,14 @@
     }
     .title-wrap {
       h3 {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: bold;
         line-height: 1.14;
         color: #8f0;
         margin-bottom: 8px;
       }
       .desc {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 1.11;
         color: #fff;
@@ -116,7 +116,6 @@
   background-color: #fff;
   padding: 2rem 30px;
   margin-top: -50px;
-  height: calc(100vh - 220px);
   display: flex;
   flex-direction: column;
   gap: 15px 0;

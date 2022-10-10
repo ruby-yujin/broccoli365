@@ -171,7 +171,6 @@
   background-color: #fff;
   padding: 2rem 30px;
   margin-top: -50px;
-  height: calc(100vh - 220px);
   display: flex;
   flex-direction: column;
   gap: 15px 0;

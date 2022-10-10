@@ -7,6 +7,7 @@ import NonVerifyStep04 from '@/design/view/nonVerify/step04.vue'
 import NonVerifyStep05 from '@/design/view/nonVerify/step05.vue'
 import NonVerifyStep06 from '@/design/view/nonVerify/step06.vue'
 import NonVerifyStep07 from '@/design/view/nonVerify/step07.vue'
+import NonVerifyStep08 from '@/design/view/nonVerify/step08.vue'
 
 //인증 후
 import VerifyStep01 from '@/design/view/verify/step01.vue'
@@ -58,6 +59,10 @@ const routes = [
       {
         path: 'step07',
         component: NonVerifyStep07
+      },
+      {
+        path: 'step08',
+        component: NonVerifyStep08
       }
     ]
   },
@@ -95,10 +100,6 @@ const routes = [
         path: 'step07',
         component: VerifyStep07
       }
-      // {
-      //   path: 'step08',
-      //   component: VerifyStep08
-      // }
     ]
   },
   {
