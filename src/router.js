@@ -103,6 +103,12 @@ const routes = [
     ]
   },
   {
+    //오늘은?
+    path: '/today',
+    name: 'today',
+    component: () => import('@/design/view/today/index.vue')
+  },
+  {
     path: '/login',
     component: () => import('@/design/view/login/index.vue')
   }
