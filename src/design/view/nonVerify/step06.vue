@@ -1,87 +1,97 @@
 <template>
   <div
-    class="h-screen max-w-md mx-auto flex justify-center relative guide-line-03"
+    class="h-screen max-w-md mx-auto flex justify-center relative guide-line-02"
   >
     <div class="fulid-wrap relative">
       <div class="floating-icon">
         <img src="/images/icon_tongue.png" alt="icon" />
       </div>
-      <div class="top-title">
-        <h2>GUIDE</h2>
+      <div class="nonVerify-top-slide height-240">
+        <div class="top-title-02">
+          <h2>MANAGENENT</h2>
+        </div>
+        <div class="date-slide">
+          <button>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.41z"
+              />
+            </svg>
+          </button>
+          <h3>
+            14, Jan
+            <a href=""
+              ><svg width="20" height="20" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                /></svg
+            ></a>
+          </h3>
+          <button>
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      <ul class="common-style-tab">
-        <li class="active"><a href="">All</a></li>
-        <li><a href="">Disease</a></li>
-        <li><a href="">Nutrition</a></li>
-        <li><a href="">Exercise</a></li>
-      </ul>
-      <div class="nonVerify-guide-accordion">
-        <div class="accordion-item">
-          <div class="top">
-            <span class="weeks">1W</span>
-            <h4>Proper understanding ofDiabetes and high blood pressure</h4>
+      <div class="nonVerify-guide-content">
+        <div class="item-card">
+          <router-link to="/nonVerify/">
+            <span>Nutrition Guide</span>
+            <h4>
+              HEALTH RED LIGHT, HIGH<br />
+              BLOOD PRESSURE
+            </h4>
             <div class="icon-arrow">
               <svg width="32" height="32" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
-                  d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6l1.41 1.41z"
+                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
                 />
               </svg>
             </div>
-          </div>
-          <div class="bottom">
-            <div class="accordion-text">
-              Why High Blood Pressure is Dangerous?
-            </div>
-            <div class="accordion-text">
-              How to Properly Control Sodium Intake
-            </div>
-            <div class="accordion-text mb-0">
-              Meal Routines/Habits for Blood Glocose Control
-            </div>
-          </div>
+          </router-link>
         </div>
-        <div class="accordion-item">
-          <div class="top">
-            <span class="weeks">2W</span>
-            <h4>Healthy weight control</h4>
-            <div class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
-                />
-              </svg>
-            </div>
+        <div class="item-card-graph"></div>
+        <div class="item-card-graph"></div>
+        <div class="item-card-half">
+          <!-- TODO 전해주신 디자인 xd, 제플린만으로는 가려진 컨텐츠가 보여서 작업할수가 없습니다.  -->
+          <div class="item-card-half-inner active">
+            <h4>Nutrition</h4>
           </div>
-        </div>
-        <div class="accordion-item">
-          <div class="top">
-            <span class="weeks">3W</span>
-            <h4>Personalized list plan</h4>
-            <div class="icon-arrow">
-              <svg width="32" height="32" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
-                />
-              </svg>
-            </div>
+          <div class="item-card-half-inner">
+            <!-- TODO 디폴트일때 텍스트 컬러값이 .active 일때랑 동일하게 잡혀서 컬러값 임의 적용했습니다  -->
+            <h4>Medication</h4>
           </div>
         </div>
       </div>
     </div>
+    <div class="btn-wrap-popup">
+      <button class="rounded-full">
+        1 Tails left
+        <svg width="32" height="32" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
     <div class="btn-wrap-bottom">
-      <button class="rounded-full btn-next">Next</button>
+      <button class="rounded-full btn-next">AUTH</button>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.guide-line-03 {
+.guide-line-02 {
   border: 1px solid #eee;
   flex-wrap: wrap;
-  background: #f7fbff;
 }
 .fulid-wrap {
   width: 100%;
@@ -95,143 +105,111 @@
     width: 100%;
   }
 }
-.top-title {
-  margin: 40px 0 20px;
-  padding: 0 30px;
-  h2 {
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 1.5;
-    color: #6cc902;
+.nonVerify-top-slide {
+  height: 270px;
+  background-color: #3c95ff;
+  padding: 2.5rem 2rem 1rem;
+  &.height-240 {
+    height: 240px;
   }
-}
-.common-style-tab {
-  width: calc(100% - 60px);
-  height: 46px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(6, 44, 90, 0.12);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li {
-    width: 25%;
-    position: relative;
-
-    &:after {
-      content: '';
-      width: 1px;
-      height: 15px;
-      background: #ddd;
-      margin-top: 4px;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    &:last-child {
-      &:after {
-        content: none;
-      }
-    }
-    a {
-      display: flex;
-      align-items: center;
-      font-size: 13px;
-      font-weight: 500;
-      color: #555;
-      justify-content: center;
-      padding: 0 9px;
-    }
-    &.active {
-      &:after {
-        content: none;
-      }
-      a {
-        width: 83%;
-        border-radius: 10px;
-        background-color: #3d95ff;
-        color: #fff;
-        height: 36px;
-        margin: 0 auto;
-      }
+  .top-title-02 {
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.18;
+      color: #8f0;
     }
   }
-}
-.nonVerify-guide-accordion {
-  padding: 1rem 30px;
-  display: grid;
-  gap: 15px 0;
-  .accordion-item {
+  .date-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 75px;
     border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 rgba(6, 44, 90, 0.12);
-    padding: 15px 20px;
-
-    .top {
-      position: relative;
+    background: #fff;
+    margin-top: 30px;
+    box-shadow: 0 0 10px 0 rgb(6 44 90 / 12%);
+    padding: 0 1rem;
+    button {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
       display: flex;
-
-      justify-content: space-between;
-      .weeks {
-        width: 48px;
+      justify-content: center;
+      align-items: center;
+      background-color: #d6e9ff;
+      > svg {
+        color: #3c95ff;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.15;
+      color: #555;
+      text-align: center;
+      position: relative;
+      a {
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        bottom: -20px;
         display: block;
-        font-size: 14px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.13;
-        letter-spacing: normal;
-        text-align: left;
-        color: #3d95ff;
-        position: relative;
-        &:after {
-          content: '';
-          width: 15px;
-          height: 2px;
-          background-color: #3d95ff;
-          position: absolute;
-          top: 10px;
-          right: 3px;
-        }
-      }
-      h4 {
-        font-family: NotoSansCJKsc;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 1.2;
-        color: #555;
-        margin: 0 0.5rem;
-      }
-      .icon-arrow {
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #d8eaff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
+        width: 20px;
         svg {
-          color: #3d95ff;
+          font-size: 11px;
         }
       }
     }
-    .bottom {
-      margin-top: 1rem;
-      display: grid;
-      gap: 15px 0;
-      .accordion-text {
-        min-height: 95px;
-        border-radius: 15px;
-        background-color: #d8eaff;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.11;
-        color: #555;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
+  }
+}
+.nonVerify-guide-content {
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  padding: 2rem 30px;
+  margin-top: -50px;
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  .item-card {
+    width: 100%;
+    min-height: 120px;
+    border-radius: 15px;
+    background-color: #d6e9ff;
+    padding: 20px 25px 0;
+    position: relative;
+    span {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.11;
+      color: #555;
+      margin-bottom: 18px;
+    }
+    h4 {
+      font-size: 20px;
+      font-family: 'Noto Sans';
+      font-weight: bold;
+      line-height: 1.15;
+      color: #3d95ff;
+    }
+    .icon-arrow {
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        color: #3d95ff;
       }
     }
   }
@@ -264,6 +242,29 @@
         line-height: 1.5;
         color: #b4b4b4;
       }
+    }
+  }
+}
+.btn-wrap-popup {
+  position: fixed;
+  bottom: 100px;
+  button {
+    width: 163px;
+    height: 50px;
+    background-color: #6cc902;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #fff;
+      color: #6cc902;
+      margin-left: 10px;
     }
   }
 }
