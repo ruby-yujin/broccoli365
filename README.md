@@ -1,6 +1,5 @@
 ## 작업내역
-리스트명 규칙
-- [ ] xd파일제목 :xd p(xd페이지번호) 올린서버의 해당페이지 url
+리스트명 규칙 - [ ] xd파일제목 :xd p(xd페이지번호) 올린서버의 해당페이지 url
 
 - Intro :xd p1 https://broccoli365-nine.vercel.app/
 - 언어선택 및 인증 전 페이지들
