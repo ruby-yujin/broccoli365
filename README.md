@@ -24,10 +24,6 @@
   - - [x] 인증 - 5 :xd p14 https://broccoli365-nine.vercel.app/verify/step06
   - - [x] 인증 - 6 :xd p15 https://broccoli365-nine.vercel.app/verify/step07
 
-- 디바이스 체크 및 디바이스연동
-
-- 문진(17개)\_영문/한글
-
 - 오늘은?
   - - [x] 오늘은 첫페이지 :xd p19 https://broccoli365-nine.vercel.app/today
 
@@ -65,3 +61,7 @@
 
 - 한글버전\_로그인
   - - [ ] 로그인 :xd page p2 https://broccoli365-nine.vercel.app/login
+  
+- 디바이스 체크 및 디바이스연동
+
+- 문진(17개)\_영문/한글
