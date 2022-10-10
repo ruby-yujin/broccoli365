@@ -6,7 +6,7 @@
       <div class="floating-icon">
         <img src="/images/icon_tongue.png" alt="icon" />
       </div>
-      <div class="nonverify-top-slide">
+      <div class="nonVerify-top-slide">
         <div class="item">
           <!-- [TODO 보내주신 이미지가 사이즈가 잘못됬습니다. 제가 임의 적용할테니 정방형 88px 로 변경필요합니다.] -->
           <div class="img-wrap">
@@ -77,11 +77,12 @@
     width: 100%;
   }
 }
-.nonverify-top-slide {
+.nonVerify-top-slide {
   height: 270px;
   background-color: #3c95ff;
-  padding: 4rem 2rem 1rem;
+  padding: 2.5rem 2rem 1rem;
   .item {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     .img-wrap {
@@ -109,8 +110,8 @@
   }
 }
 .nonVerify-guide-content {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
   background-color: #fff;
   padding: 2rem 30px;
