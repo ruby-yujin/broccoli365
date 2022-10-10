@@ -10,7 +10,7 @@
         <div class="item">
           <!-- [TODO 보내주신 이미지가 사이즈가 잘못됬습니다. 제가 임의 적용할테니 정방형 88px 로 변경필요합니다.] -->
           <div class="img-wrap">
-            <img src="/images/icon_haha.png" alt="icon haha" />
+            <img src="/images/icon_haha_new.png" alt="icon haha" />
           </div>
 
           <div class="title-wrap">
