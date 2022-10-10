@@ -174,7 +174,6 @@
 
       justify-content: space-between;
       .weeks {
-        border: 1px solid #ddd;
         width: 48px;
         display: block;
         font-size: 14px;
@@ -197,7 +196,6 @@
         }
       }
       h4 {
-        border: 1px solid yellow;
         font-family: NotoSansCJKsc;
         font-size: 18px;
         font-weight: bold;
@@ -206,7 +204,6 @@
         margin: 0 0.5rem;
       }
       .icon-arrow {
-        border: 1px solid green;
         width: 25px;
         height: 25px;
         border-radius: 50%;
