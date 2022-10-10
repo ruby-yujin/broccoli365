@@ -18,7 +18,7 @@
       <div class="nonVerify-guide-accordion">
         <div class="accordion-item">
           <div class="top">
-            <span class="weeks">1W ―</span>
+            <span class="weeks">1W</span>
             <h4>Proper understanding ofDiabetes and high blood pressure</h4>
             <div class="icon-arrow">
               <svg width="32" height="32" viewBox="0 0 24 24">
@@ -36,8 +36,36 @@
             <div class="accordion-text">
               How to Properly Control Sodium Intake
             </div>
-            <div class="accordion-text">
+            <div class="accordion-text mb-0">
               Meal Routines/Habits for Blood Glocose Control
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="top">
+            <span class="weeks">2W</span>
+            <h4>Healthy weight control</h4>
+            <div class="icon-arrow">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="top">
+            <span class="weeks">3W</span>
+            <h4>Personalized list plan</h4>
+            <div class="icon-arrow">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -131,17 +159,23 @@
 }
 .nonVerify-guide-accordion {
   padding: 1rem 30px;
+  display: grid;
+  gap: 15px 0;
   .accordion-item {
     width: 100%;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 0 10px 0 rgba(6, 44, 90, 0.12);
-    padding: 13px 20px;
+    padding: 15px 20px;
 
     .top {
       position: relative;
       display: flex;
+
+      justify-content: space-between;
       .weeks {
+        border: 1px solid #ddd;
+        width: 48px;
         display: block;
         font-size: 14px;
         font-weight: bold;
@@ -157,17 +191,22 @@
           width: 15px;
           height: 2px;
           background-color: #3d95ff;
+          position: absolute;
+          top: 10px;
+          right: 3px;
         }
       }
       h4 {
+        border: 1px solid yellow;
         font-family: NotoSansCJKsc;
         font-size: 18px;
         font-weight: bold;
-        line-height: 1.45;
+        line-height: 1.2;
         color: #555;
-        margin-right: 1rem;
+        margin: 0 0.5rem;
       }
       .icon-arrow {
+        border: 1px solid green;
         width: 25px;
         height: 25px;
         border-radius: 50%;
@@ -175,12 +214,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
         svg {
           color: #3d95ff;
         }
       }
     }
     .bottom {
+      margin-top: 1rem;
+      display: grid;
+      gap: 15px 0;
       .accordion-text {
         min-height: 95px;
         border-radius: 15px;
@@ -192,7 +235,6 @@
         display: flex;
         align-items: center;
         padding: 0 20px;
-        margin-bottom: 15px;
       }
     }
   }
