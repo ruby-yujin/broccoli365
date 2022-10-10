@@ -196,6 +196,7 @@
         }
       }
       h4 {
+        width: calc(100% - 73px);
         font-family: NotoSansCJKsc;
         font-size: 18px;
         font-weight: bold;
