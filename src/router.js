@@ -27,6 +27,13 @@ import CarePlanIntro from '@/design/view/carePlan/intro.vue'
 import CarePlan from '@/design/view/carePlan/carePlan.vue'
 import CarePlanDetail from '@/design/view/carePlan/carePlanDetail.vue'
 
+//Guide
+import guideDetail from '@/design/view/guide/guideDetail.vue'
+
+//Management
+import Management from '@/design/view/management/index.vue'
+import ManagementBloodPressure from '@/design/view/management/bloodPressure.vue'
+
 const routes = [
   {
     //인트로
@@ -34,7 +41,6 @@ const routes = [
     name: 'Intro',
     component: () => import('@/design/view/index.vue')
   },
-
   {
     // 인증 전
     path: '/nonVerify',
@@ -143,6 +149,44 @@ const routes = [
         path: 'carePlanDetail',
         component: CarePlanDetail
       }
+    ]
+  },
+  {
+    //guide
+    path: '/guide',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      // {
+      //   path: 'intro',
+      //   component: CarePlanIntro
+      // },
+      // {
+      //   path: 'carePlan',
+      //   component: CarePlan
+      // },
+      {
+        path: 'guideDetail',
+        component: guideDetail
+      }
+    ]
+  },
+  {
+    //Management
+    path: '/management',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'index',
+        component: Management
+      },
+      {
+        path: 'bloodPressure',
+        component: ManagementBloodPressure
+      }
+      // {
+      //   path: 'guideDetail',
+      //   component: guideDetail
+      // }
     ]
   },
   {
