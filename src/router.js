@@ -22,6 +22,9 @@ import VerifyStep07 from '@/design/view/verify/step07.vue'
 import Today from '@/design/view/today/index.vue'
 import TodayTask from '@/design/view/today/task.vue'
 
+//CarePlan
+import CarePlanIntro from '@/design/view/carePlan/intro.vue'
+
 const routes = [
   {
     //인트로
@@ -122,6 +125,22 @@ const routes = [
     ]
   },
   {
+    //care plan
+    path: '/carePlan',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'intro',
+        component: CarePlanIntro
+      },
+      {
+        path: 'task',
+        component: TodayTask
+      }
+    ]
+  },
+  {
+    //로그인
     path: '/login',
     component: () => import('@/design/view/login/index.vue')
   }
