@@ -44,6 +44,7 @@ import Profile from '@/design/view/account/profile.vue'
 //Setting
 import Setting from '@/design/view/settings/index.vue'
 import SettingAlarm from '@/design/view/settings/alarm.vue'
+import SettingFont from '@/design/view/settings/font.vue'
 
 const routes = [
   {
@@ -221,11 +222,6 @@ const routes = [
         path: 'profile',
         component: Profile
       }
-
-      // {
-      //   path: 'nutritionPopup',
-      //   component: ManagementNutritionPopup
-      // }
     ]
   },
   {
@@ -240,6 +236,10 @@ const routes = [
       {
         path: 'alarm',
         component: SettingAlarm
+      },
+      {
+        path: 'font',
+        component: SettingFont
       }
       // {
       //   path: 'bloodPressure',
