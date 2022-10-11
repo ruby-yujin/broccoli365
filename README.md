@@ -52,16 +52,16 @@
   - - [x] profile :xd p35 https://broccoli365-nine.vercel.app/account/profile
 
 - SETTING(Alarm, fontsize, term&condition 등)
-  - - [ ] List :xd p36
-  - - [ ] Alarm :xd p37
-  - - [ ] fontsize :xd p38
-  - - [ ] 언어선택 :xd p39
-  - - [ ] 약관리스트 :xd p40
-  - - [ ] 약관 디테일 :xd p41
-  - - [ ] 개인정보약관 :xd p42
+  - - [x] List :xd p36 https://broccoli365-nine.vercel.app/setting/index
+  - - [x] Alarm :xd p37 https://broccoli365-nine.vercel.app/setting/alarm
+  - - [x] fontsize :xd p38 https://broccoli365-nine.vercel.app/setting/font
+  - - [x] 언어선택 :xd p39 https://broccoli365-nine.vercel.app/setting/language
+  - - [x] 약관리스트 :xd p40 https://broccoli365-nine.vercel.app/setting/term
+  - - [x] 약관 디테일 :xd p41 https://broccoli365-nine.vercel.app/setting/termText
+  - - [x] 개인정보약관 :xd p42 https://broccoli365-nine.vercel.app/setting/privacyText
 
 - 한글버전\_로그인
-  - - [ ] 로그인 :xd page p2 https://broccoli365-nine.vercel.app/login
+  - - [x] 로그인 :xd page p2 https://broccoli365-nine.vercel.app/login
   
 - 디바이스 체크 및 디바이스연동
 
