@@ -37,6 +37,12 @@ import ManagementWeight from '@/design/view/management/weight.vue'
 import ManagementNutrition from '@/design/view/management/nutrition.vue'
 import ManagementNutritionPopup from '@/design/view/management/nutritionPopup.vue'
 
+//Account
+import Account from '@/design/view/account/index.vue'
+
+//Setting
+import Setting from '@/design/view/settings/index.vue'
+
 const routes = [
   {
     //인트로
@@ -198,6 +204,48 @@ const routes = [
         path: 'nutritionPopup',
         component: ManagementNutritionPopup
       }
+    ]
+  },
+  {
+    //Account
+    path: '/account',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'index',
+        component: Account
+      }
+      // {
+      //   path: 'nutritionPopup',
+      //   component: ManagementNutritionPopup
+      // }
+    ]
+  },
+  {
+    //Setting
+    path: '/setting',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'index',
+        component: Setting
+      }
+      // {
+      //   path: 'bloodPressure',
+      //   component: ManagementBloodPressure
+      // },
+      // {
+      //   path: 'weight',
+      //   component: ManagementWeight
+      // },
+      // {
+      //   path: 'nutrition',
+      //   component: ManagementNutrition
+      // },
+      // {
+      //   path: 'nutritionPopup',
+      //   component: ManagementNutritionPopup
+      // }
     ]
   },
   {
