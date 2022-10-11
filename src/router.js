@@ -50,6 +50,9 @@ import SettingTerm from '@/design/view/settings/term.vue'
 import SettingTermText from '@/design/view/settings/termText.vue'
 import SettingPrivacyText from '@/design/view/settings/privacyText.vue'
 
+//Message
+import Message from '@/design/view/message/index.vue'
+
 const routes = [
   {
     //인트로
@@ -261,6 +264,25 @@ const routes = [
         path: 'privacyText',
         component: SettingPrivacyText
       }
+    ]
+  },
+  {
+    //Message
+    path: '/message',
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'index',
+        component: Message
+      }
+      // {
+      //   path: 'alarm',
+      //   component: SettingAlarm
+      // },
+      // {
+      //   path: 'font',
+      //   component: SettingFont
+      // }
     ]
   },
   {
