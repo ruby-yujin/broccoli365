@@ -25,8 +25,9 @@
   - - [x] 인증 - 6 :xd p15 https://broccoli365-nine.vercel.app/verify/step07
 
 - 오늘은?
-  - - [x] 오늘은 첫페이지 :xd p19 https://broccoli365-nine.vercel.app/today
-
+  - - [x] 오늘은 첫페이지 :xd p19 https://broccoli365-nine.vercel.app/today/index
+  - - [x] 오늘은 첫페이지 :xd p43 https://broccoli365-nine.vercel.app/today/task
+  
 - 케어플랜
   - - [ ] care plan :xd p20
   - - [ ] care plan - 1 :xd p21
