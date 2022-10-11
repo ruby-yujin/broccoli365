@@ -46,6 +46,7 @@ import Setting from '@/design/view/settings/index.vue'
 import SettingAlarm from '@/design/view/settings/alarm.vue'
 import SettingFont from '@/design/view/settings/font.vue'
 import SettingLanguage from '@/design/view/settings/language.vue'
+import SettingTerm from '@/design/view/settings/term.vue'
 
 const routes = [
   {
@@ -245,6 +246,10 @@ const routes = [
       {
         path: 'language',
         component: SettingLanguage
+      },
+      {
+        path: 'term',
+        component: SettingTerm
       }
     ]
   },
