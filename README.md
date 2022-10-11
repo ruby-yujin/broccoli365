@@ -29,18 +29,18 @@
   - - [x] 오늘은 첫페이지 :xd p43 https://broccoli365-nine.vercel.app/today/task
   
 - 케어플랜
-  - - [ ] care plan :xd p20 https://broccoli365-nine.vercel.app/carePlan/intro
-  - - [ ] care plan - 1 :xd p21 https://broccoli365-nine.vercel.app/carePlan/carePlan
-  - - [ ] care plan - 2 detail :xd p22 https://broccoli365-nine.vercel.app/carePlan/carePlanDetail
+  - - [x] care plan :xd p20 https://broccoli365-nine.vercel.app/carePlan/intro
+  - - [x] care plan - 1 :xd p21 https://broccoli365-nine.vercel.app/carePlan/carePlan
+  - - [x] care plan - 2 detail :xd p22 https://broccoli365-nine.vercel.app/carePlan/carePlanDetail
   
 - 케어가이드
   - - [ ] care guide :xd page p23
   - - [ ] care guide detail :xd p24
   
 - MANAGEMENT
-  - - [ ] management 첫페이지 :xd p25
-  - - [ ] management 혈압 :xd p26
-  - - [ ] management 몸무게 :xd p27
+  - - [x] management 첫페이지 :xd p25 https://broccoli365-nine.vercel.app/management/index
+  - - [x] management 혈압 :xd p26 https://broccoli365-nine.vercel.app/management/bloodPressure
+  - - [x] management 몸무게 :xd p27 https://broccoli365-nine.vercel.app/management/weight
   - - [ ] management 영양 :xd p28
   - - [ ] management 영양 팝업 :xd p29
   
