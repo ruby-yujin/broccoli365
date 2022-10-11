@@ -62,6 +62,9 @@
 
 - 한글버전\_로그인
   - - [x] 로그인 :xd page p2 https://broccoli365-nine.vercel.app/login
+
+- 검색
+  - - [x] 검색 :xd page p30 https://broccoli365-nine.vercel.app/search
   
 - 디바이스 체크 및 디바이스연동
 
