@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-input::placeholder {
-  color: #d8d9db;
-}
-
 @font-face {
   font-family: 'GmarketSans';
   font-weight: 300;
@@ -54,4 +50,13 @@ input::placeholder {
 
 * {
   font-family: 'GmarketSans', 'Noto Sans', sans-serif;
+}
+
+input::placeholder {
+  color: #d8d9db;
+}
+
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }

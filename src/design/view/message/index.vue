@@ -22,6 +22,9 @@
         </div>
       </div>
     </div>
+    <button class="btn-customerCenter">
+      <img src="/images/icon_customerCenter.png" alt="" />
+    </button>
     <div class="bottom-gnb">
       <!-- TODO 보내주신 이미지 파일에 없어서 캡처로 임의 적용했습니다 -->
       <p class="aa">
@@ -119,6 +122,14 @@
     svg {
       color: #1c75bc;
     }
+  }
+}
+.btn-customerCenter {
+  position: absolute;
+  bottom: 130px;
+  right: 5%;
+  > img {
+    width: 70px;
   }
 }
 </style>
