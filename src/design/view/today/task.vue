@@ -15,21 +15,36 @@
           <div class="title-wrap">
             <h3>Focus! Task</h3>
             <p class="desc">
-              <span class="color-point">Careplan</span> 가입한지 21일이<br />
-              되었습니다. 긍정의 힘을믿으세요
+              It is 26 day(s) of your care plan.<br />
+              Let today be the start of something New.
             </p>
           </div>
         </div>
       </div>
       <div class="nonVerify-guide-content d-flex gap-y-2">
+        <div class="item-card">
+          <router-link to="/nonVerify/">
+            <span>Nutrition Guide</span>
+            <h4>
+              HEALTH RED LIGHT, HIGH<br />
+              BLOOD PRESSURE
+            </h4>
+            <div class="icon-arrow">
+              <svg width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"
+                />
+              </svg>
+            </div>
+          </router-link>
+        </div>
         <div class="item-accordion-today">
           <div class="top">
             <div class="icon">
               <img src="/images/icon_today01.png" alt="" />
             </div>
-            <h3>혈압</h3>
-            <p class="do-check">Let’s Checkout Now</p>
-            <!-- TODO 위에 <p></p> 태그가 있고 없음에 따라 isData  클래스 추가 필요합니다 (현:없을때) -->
+            <h3>Blood pressure</h3>
             <span class="icon-arrow">
               <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
@@ -46,9 +61,8 @@
             <div class="icon">
               <img src="/images/icon_today02.png" alt="" />
             </div>
-            <h3>혈당</h3>
-            <p class="checked-data">150mg/dL</p>
-            <span class="icon-arrow isData">
+            <h3>Blood glucose</h3>
+            <span class="icon-arrow">
               <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -63,26 +77,7 @@
             <div class="icon">
               <img src="/images/icon_today03.png" alt="" />
             </div>
-            <h3>체중계</h3>
-            <p class="checked-data">55kg</p>
-            <!-- TODO 위에 <p></p> 태그가 있고 없음에 따라 isData  클래스 추가 필요합니다 (현:있을때) -->
-            <span class="icon-arrow isData">
-              <svg width="25" height="25" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-        <!-- TODO active 처리 필요합니다  -->
-        <div class="item-accordion-today active">
-          <div class="top">
-            <div class="icon">
-              <img src="/images/icon_today04.png" alt="" />
-            </div>
-            <h3>식단(영양)</h3>
+            <h3>Weight</h3>
             <span class="icon-arrow">
               <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
@@ -92,39 +87,13 @@
               </svg>
             </span>
           </div>
-          <div class="bottom">
-            <div class="menu-set">
-              <strong>아침</strong>
-              <ul>
-                <li>현미밥<span>150kal</span></li>
-                <li>북어국<span>150kal</span></li>
-                <li>계란 반개<span>150kal</span></li>
-              </ul>
-            </div>
-            <div class="menu-set">
-              <strong>점심</strong>
-              <ul>
-                <li>현미밥<span>150kal</span></li>
-                <li>북어국<span>150kal</span></li>
-                <li>계란 반개<span>150kal</span></li>
-              </ul>
-            </div>
-            <div class="menu-set">
-              <strong>저녁</strong>
-              <ul>
-                <li>현미밥<span>150kal</span></li>
-                <li>북어국<span>150kal</span></li>
-                <li>계란 반개<span>150kal</span></li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="item-accordion-today">
           <div class="top">
             <div class="icon">
-              <img src="/images/icon_today05.png" alt="" />
+              <img src="/images/icon_today04.png" alt="" />
             </div>
-            <h3>복약</h3>
+            <h3>Nutrition</h3>
             <span class="icon-arrow">
               <svg width="25" height="25" viewBox="0 0 24 24">
                 <path
@@ -136,45 +105,23 @@
           </div>
           <div class="bottom"></div>
         </div>
-      </div>
-      <div class="bottom-gnb">
-        <!-- TODO 보내주신 이미지 파일에 없어서 캡처로 임의 적용했습니다 -->
-        <p class="aa">
-          아래 아이콘 보내주신 이미지 파일에 없어서 캡처로 임의 적용했습니다
-        </p>
-        <ul>
-          <li>
-            <router-link to="/today">
-              <img src="/images/icon_today.png" alt="" />
-              <p>TODAY</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/careplan">
-              <img src="/images/icon_careplan.png" alt="" />
-              <p>CARE PLAN</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/guide">
-              <img src="/images/icon_guide.png" alt="" />
-              <p>GUIDE</p>
-            </router-link>
-          </li>
-
-          <li>
-            <router-link to="/guide">
-              <img src="/images/icon_management.png" alt="" />
-              <p>MANAGE</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/guide">
-              <img src="/images/icon_message.png" alt="" />
-              <p>MESSAGE</p>
-            </router-link>
-          </li>
-        </ul>
+        <div class="item-accordion-today">
+          <div class="top">
+            <div class="icon">
+              <img src="/images/icon_today05.png" alt="" />
+            </div>
+            <h3>Medication(복약)</h3>
+            <span class="icon-arrow">
+              <svg width="25" height="25" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4Z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="bottom"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -242,6 +189,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px 0;
+  height: 100%;
   .item-accordion-today {
     border-radius: 15px;
     border: solid 1px #d8d9db;

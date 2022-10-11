@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from 'vue-router'
-//인증 전
+//인증 전 steps
 import NonVerifyStep01 from '@/design/view/nonVerify/step01.vue'
 import NonVerifyStep02 from '@/design/view/nonVerify/step02.vue'
 import NonVerifyStep03 from '@/design/view/nonVerify/step03.vue'
@@ -9,7 +9,7 @@ import NonVerifyStep06 from '@/design/view/nonVerify/step06.vue'
 import NonVerifyStep07 from '@/design/view/nonVerify/step07.vue'
 import NonVerifyStep08 from '@/design/view/nonVerify/step08.vue'
 
-//인증 후
+//인증 후 steps
 import VerifyStep01 from '@/design/view/verify/step01.vue'
 import VerifyStep02 from '@/design/view/verify/step02.vue'
 import VerifyStep03 from '@/design/view/verify/step03.vue'
@@ -17,6 +17,10 @@ import VerifyStep04 from '@/design/view/verify/step04.vue'
 import VerifyStep05 from '@/design/view/verify/step05.vue'
 import VerifyStep06 from '@/design/view/verify/step06.vue'
 import VerifyStep07 from '@/design/view/verify/step07.vue'
+
+//오늘은?, Focus Task
+import Today from '@/design/view/today/index.vue'
+import TodayTask from '@/design/view/today/task.vue'
 
 const routes = [
   {
@@ -105,8 +109,17 @@ const routes = [
   {
     //오늘은?
     path: '/today',
-    name: 'today',
-    component: () => import('@/design/view/today/index.vue')
+    component: () => import('@/design/layout/ContentLayout.vue'),
+    children: [
+      {
+        path: 'index',
+        component: Today
+      },
+      {
+        path: 'task',
+        component: TodayTask
+      }
+    ]
   },
   {
     path: '/login',
