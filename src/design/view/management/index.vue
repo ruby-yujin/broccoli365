@@ -268,7 +268,7 @@
   }
 }
 .btn-wrap-bottom {
-  width: 90%;
+  max-width: 446px;
   display: flex;
   justify-content: space-between;
   align-items: center;
