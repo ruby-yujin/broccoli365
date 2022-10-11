@@ -14,7 +14,7 @@
                 />
               </svg>
             </router-link>
-            <h2>Setting</h2>
+            <h2>Alam setting</h2>
           </div>
         </div>
         <div class="setting-detail-bottom">
