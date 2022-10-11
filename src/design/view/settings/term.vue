@@ -19,7 +19,7 @@
         </div>
         <div class="setting-detail-bottom">
           <div class="setting-item">
-            <router-link to="">
+            <router-link to="/setting/termText">
               <span>Terms of Service</span>
               <div class="icon-arrow">
                 <svg width="20" height="20" viewBox="0 0 24 24">

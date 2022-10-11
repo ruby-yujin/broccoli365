@@ -47,6 +47,8 @@ import SettingAlarm from '@/design/view/settings/alarm.vue'
 import SettingFont from '@/design/view/settings/font.vue'
 import SettingLanguage from '@/design/view/settings/language.vue'
 import SettingTerm from '@/design/view/settings/term.vue'
+import SettingTermText from '@/design/view/settings/termText.vue'
+import SettingPrivacyText from '@/design/view/settings/privacyText.vue'
 
 const routes = [
   {
@@ -250,6 +252,14 @@ const routes = [
       {
         path: 'term',
         component: SettingTerm
+      },
+      {
+        path: 'termText',
+        component: SettingTermText
+      },
+      {
+        path: 'privacyText',
+        component: SettingPrivacyText
       }
     ]
   },
