@@ -24,6 +24,8 @@ import TodayTask from '@/design/view/today/task.vue'
 
 //CarePlan
 import CarePlanIntro from '@/design/view/carePlan/intro.vue'
+import CarePlan from '@/design/view/carePlan/carePlan.vue'
+import CarePlanDetail from '@/design/view/carePlan/carePlanDetail.vue'
 
 const routes = [
   {
@@ -134,8 +136,12 @@ const routes = [
         component: CarePlanIntro
       },
       {
-        path: 'task',
-        component: TodayTask
+        path: 'carePlan',
+        component: CarePlan
+      },
+      {
+        path: 'carePlanDetail',
+        component: CarePlanDetail
       }
     ]
   },
