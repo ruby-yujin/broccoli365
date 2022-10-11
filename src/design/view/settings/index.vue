@@ -6,7 +6,7 @@
       <div class="setting-detail-content">
         <div class="setting-detail-top">
           <div class="title-wrap">
-            <router-link to="/carePlan/carePlan">
+            <router-link to="">
               <svg width="32" height="32" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
@@ -14,10 +14,76 @@
                 />
               </svg>
             </router-link>
-            <h2>Account</h2>
+            <h2>Setting</h2>
           </div>
         </div>
-        <div class="setting-detail-bottom"></div>
+        <div class="setting-detail-bottom">
+          <div class="setting-item">
+            <router-link to="">
+              <span>Alam setting</span>
+              <div class="icon-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10Z"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
+          <div class="setting-item">
+            <router-link to="">
+              <span>Font size setting</span>
+              <div class="icon-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10Z"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
+          <div class="setting-item">
+            <router-link to="">
+              <span>Language setting</span>
+              <div class="icon-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10Z"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
+          <div class="setting-item">
+            <router-link to="">
+              <span>Term & coditions</span>
+              <div class="icon-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10Z"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
+          <div class="setting-item">
+            <router-link to="">
+              <span>Membership Withdrawal</span>
+              <div class="icon-arrow">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10Z"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -34,8 +100,6 @@
   margin: 0 auto;
 }
 .setting-detail-content {
-  //  width: 80%;
-  // margin: 0 auto;
   h2 {
     font-size: 28px;
     font-weight: bold;
@@ -85,7 +149,32 @@
     }
   }
   .setting-detail-bottom {
-    padding: 1rem 0;
+    .setting-item {
+      border-bottom: 1px solid #ddd;
+      padding: 0.8rem 0;
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          display: block;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.11;
+          color: #555;
+        }
+        .icon-arrow {
+          margin-left: auto;
+          svg {
+            color: #555555;
+          }
+        }
+      }
+    }
   }
 }
 
