@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+input::placeholder {
+  color: #d8d9db;
+}
+
 @font-face {
   font-family: 'GmarketSans';
   font-weight: 300;

@@ -264,6 +264,11 @@ const routes = [
     ]
   },
   {
+    //검색
+    path: '/search',
+    component: () => import('@/design/view/search/index.vue')
+  },
+  {
     //로그인
     path: '/login',
     component: () => import('@/design/view/login/index.vue')
