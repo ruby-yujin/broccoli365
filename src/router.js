@@ -43,6 +43,7 @@ import Profile from '@/design/view/account/profile.vue'
 
 //Setting
 import Setting from '@/design/view/settings/index.vue'
+import SettingAlarm from '@/design/view/settings/alarm.vue'
 
 const routes = [
   {
@@ -235,6 +236,10 @@ const routes = [
       {
         path: 'index',
         component: Setting
+      },
+      {
+        path: 'alarm',
+        component: SettingAlarm
       }
       // {
       //   path: 'bloodPressure',
