@@ -45,7 +45,8 @@
   - - [x] management 영양 팝업 :xd p29 https://broccoli365-nine.vercel.app/management/nuritionPopup
   
 - MESSAGE
-  - - [ ] care guide :xd p33
+  - - [x] index :xd p31 https://broccoli365-nine.vercel.app/message/index
+  - - [x] index popup :xd p31 https://broccoli365-nine.vercel.app/message/indexPopup
   
 - MY ACCOUNT
   - - [x] account :xd p34 https://broccoli365-nine.vercel.app/account/index
