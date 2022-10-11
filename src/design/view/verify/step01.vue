@@ -118,9 +118,6 @@
     color: #555;
   }
 }
-button + button {
-  margin: 10px;
-}
 
 .btn-wrap {
   width: 90%;

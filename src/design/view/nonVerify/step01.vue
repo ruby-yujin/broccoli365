@@ -40,9 +40,7 @@
   color: #3d95ff;
   font-size: 22px;
   font-weight: bold;
-}
-button + button {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-bottom {

@@ -78,9 +78,6 @@
   font-size: 20px;
   font-weight: bold;
 }
-button + button {
-  margin: 10px;
-}
 
 .btn-bottom {
   position: absolute;

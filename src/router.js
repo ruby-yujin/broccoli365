@@ -33,6 +33,7 @@ import guideDetail from '@/design/view/guide/guideDetail.vue'
 //Management
 import Management from '@/design/view/management/index.vue'
 import ManagementBloodPressure from '@/design/view/management/bloodPressure.vue'
+import ManagementWeight from '@/design/view/management/weight.vue'
 
 const routes = [
   {
@@ -182,6 +183,10 @@ const routes = [
       {
         path: 'bloodPressure',
         component: ManagementBloodPressure
+      },
+      {
+        path: 'weight',
+        component: ManagementWeight
       }
       // {
       //   path: 'guideDetail',
