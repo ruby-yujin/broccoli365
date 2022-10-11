@@ -52,6 +52,7 @@ import SettingPrivacyText from '@/design/view/settings/privacyText.vue'
 
 //Message
 import Message from '@/design/view/message/index.vue'
+import MessagePopup from '@/design/view/message/indexPopup.vue'
 
 const routes = [
   {
@@ -274,6 +275,10 @@ const routes = [
       {
         path: 'index',
         component: Message
+      },
+      {
+        path: 'indexPopup',
+        component: MessagePopup
       }
       // {
       //   path: 'alarm',
