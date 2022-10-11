@@ -41,8 +41,8 @@
   - - [x] management 첫페이지 :xd p25 https://broccoli365-nine.vercel.app/management/index
   - - [x] management 혈압 :xd p26 https://broccoli365-nine.vercel.app/management/bloodPressure
   - - [x] management 몸무게 :xd p27 https://broccoli365-nine.vercel.app/management/weight
-  - - [ ] management 영양 :xd p28
-  - - [ ] management 영양 팝업 :xd p29
+  - - [ ] management 영양 :xd p28 https://broccoli365-nine.vercel.app/management/nurition
+  - - [ ] management 영양 팝업 :xd p29 https://broccoli365-nine.vercel.app/management/nuritionPopup
   
 - MESSAGE
   - - [ ] care guide :xd p33
