@@ -281,7 +281,7 @@
   margin-right: 7%;
   button {
     height: 100%;
-    width: 50px;
+    width: 55px;
     color: #555;
 
     &.active {
