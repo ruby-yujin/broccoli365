@@ -29,9 +29,9 @@
   - - [x] 오늘은 첫페이지 :xd p43 https://broccoli365-nine.vercel.app/today/task
   
 - 케어플랜
-  - - [ ] care plan :xd p20
-  - - [ ] care plan - 1 :xd p21
-  - - [ ] care plan - 2 detail :xd p22
+  - - [ ] care plan :xd p20 https://broccoli365-nine.vercel.app/carePlan/intro
+  - - [ ] care plan - 1 :xd p21 https://broccoli365-nine.vercel.app/carePlan/carePlan
+  - - [ ] care plan - 2 detail :xd p22 https://broccoli365-nine.vercel.app/carePlan/carePlanDetail
   
 - 케어가이드
   - - [ ] care guide :xd page p23
