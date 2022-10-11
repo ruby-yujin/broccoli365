@@ -23,6 +23,7 @@
       </div>
     </div>
     <button class="btn-customerCenter">
+      <!-- TODO 보내주신 이미지 파일에 없어서 캡처로 임의 적용했습니다 -->
       <img src="/images/icon_customerCenter.png" alt="" />
     </button>
     <div class="bottom-gnb">
