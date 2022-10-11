@@ -39,6 +39,7 @@ import ManagementNutritionPopup from '@/design/view/management/nutritionPopup.vu
 
 //Account
 import Account from '@/design/view/account/index.vue'
+import Profile from '@/design/view/account/profile.vue'
 
 //Setting
 import Setting from '@/design/view/settings/index.vue'
@@ -214,7 +215,12 @@ const routes = [
       {
         path: 'index',
         component: Account
+      },
+      {
+        path: 'profile',
+        component: Profile
       }
+
       // {
       //   path: 'nutritionPopup',
       //   component: ManagementNutritionPopup
