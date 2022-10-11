@@ -35,6 +35,7 @@ import Management from '@/design/view/management/index.vue'
 import ManagementBloodPressure from '@/design/view/management/bloodPressure.vue'
 import ManagementWeight from '@/design/view/management/weight.vue'
 import ManagementNutrition from '@/design/view/management/nutrition.vue'
+import ManagementNutritionPopup from '@/design/view/management/nutritionPopup.vue'
 
 const routes = [
   {
@@ -192,11 +193,11 @@ const routes = [
       {
         path: 'nutrition',
         component: ManagementNutrition
+      },
+      {
+        path: 'nutritionPopup',
+        component: ManagementNutritionPopup
       }
-      // {
-      //   path: 'guideDetail',
-      //   component: guideDetail
-      // }
     ]
   },
   {
