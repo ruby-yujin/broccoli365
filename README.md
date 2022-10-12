@@ -32,8 +32,8 @@
   - - [x] care plan - 2 detail :xd p22 https://broccoli365-nine.vercel.app/carePlan/carePlanDetail
   
 - 케어가이드
-  - - [ ] care guide :xd page p23
-  - - [ ] care guide detail :xd p24
+  - - [x] care guide :xd page p23 https://broccoli365-nine.vercel.app/nonVerify/step05
+  - - [ ] care guide detail :xd p24 https://broccoli365-nine.vercel.app/guide/guideDetail
   
 - MANAGEMENT
   - - [x] management 첫페이지 :xd p25 https://broccoli365-nine.vercel.app/management/index
