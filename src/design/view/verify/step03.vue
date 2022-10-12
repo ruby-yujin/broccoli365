@@ -3,50 +3,69 @@
     class="h-screen max-w-md mx-auto flex items-center justify-center relative guide-line"
   >
     <div class="wrap relative">
-      <!-- Modal -->
-      <div class="">
-        <button
-          type="button"
-          class="inline-block px-6 py-2.5 bg-blue-600 text-white"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModalSm"
-        >
-          Small modal
-        </button>
-      </div>
-
-      <div
-        class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
-        id="exampleModalSm"
-        tabindex="-1"
-        aria-modal="true"
-      >
-        <div class="modal-dialog modal-sm relative w-auto pointer-events-none">
-          <div class="modal-content">
-            <div class="modal-body relative p-4"></div>
-          </div>
+      <img src="/images/icon_smile.png" alt="" class="block mx-auto" />
+      <h2 class="title text-center mx-auto">Enter your cell phone number</h2>
+      <form action="">
+        <div class="user-info">
+          <input type="text" value="0" class="w-full" />
         </div>
+      </form>
+    </div>
+    <div class="btn-wrap">
+      <button class="rounded-full btn-prev">Prev</button>
+      <button class="rounded-full btn-next">Next</button>
+    </div>
+
+    <div class="modal-common">
+      <p class="modal-text">
+        Couldn’t find your <br />
+        Account with your<br />
+        Phone number.
+        <br /><br />
+        Please contact your<br />
+        Clinic manager.
+      </p>
+      <div class="modal-btn-wrap">
+        <button class="w-full rounded-full btn-green">OK</button>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.common-modal {
+.modal-common {
+  min-width: 260px;
+  margin-left: -130px;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  border-radius: 15px;
   box-shadow: 0 0 10px 0 rgba(6, 44, 90, 0.12);
   border: solid 1px #3d95ff;
   background-color: #fff;
-  .title {
+  padding: 30px 2rem;
+  .modal-text {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.11;
     text-align: center;
     color: #555;
   }
+  .modal-btn-wrap {
+    margin-top: 2rem;
+    .btn-green {
+      height: 50px;
+      background: #6cc902;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 .guide-line {
   border: 1px solid #eee;
-  padding: 4rem 0 1rem;
   flex-wrap: wrap;
 }
 .wrap {
@@ -54,7 +73,7 @@
   margin: 0 auto;
 }
 .title {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 1.13;
   color: #555;
