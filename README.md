@@ -4,8 +4,7 @@
 - Intro :xd p1 https://broccoli365-nine.vercel.app/
 - 언어선택 및 인증 전 페이지들
   - - [x] 언어선택 :xd p3 https://broccoli365-nine.vercel.app/nonVerify/step01
-  - - [ ] 인증전 - 1 :xd p4 https://broccoli365-nine.vercel.app/nonVerify/step02
-          (슬라이드아직)
+  - - [x] 인증전 - 1 :xd p4 https://broccoli365-nine.vercel.app/nonVerify/step02
   - - [x] 인증전 - 2 :xd p5 https://broccoli365-nine.vercel.app/nonVerify/step03
   - - [x] 인증전 - 3 :xd p6 https://broccoli365-nine.vercel.app/nonVerify/step04
   - - [x] 인증전 - 4 :xd p7 https://broccoli365-nine.vercel.app/nonVerify/step05
