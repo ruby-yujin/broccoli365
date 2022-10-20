@@ -11,7 +11,7 @@
   - - [x] 인증전 - 5 :xd p8 https://broccoli365-nine.vercel.app/nonVerify/step06
   - - [x] 인증전 - 6 :xd p16 https://broccoli365-nine.vercel.app/nonVerify/step07
   - - [x] 인증전 - 7 :xd p17 https://broccoli365-nine.vercel.app/nonVerify/step08
-  - - [x] 인증전 - 8 :xd p18 https://broccoli365-nine.vercel.app/nonVerify/step09
+  - - [x] 인증전 - 8 :xd p18 https://broccoli365-nine.vercel.app/nonVerify/step08
   
 - 회원가입 및 개인인증처리
   - - [x] 인증 :xd p9 https://broccoli365-nine.vercel.app/verify/step01
