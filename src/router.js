@@ -6,6 +6,10 @@ import NonVerifyStep03 from '@/design/view/nonVerify/step03.vue'
 import NonVerifyStep04 from '@/design/view/nonVerify/step04.vue'
 import NonVerifyStep05 from '@/design/view/nonVerify/step05.vue'
 import NonVerifyStep06 from '@/design/view/nonVerify/step06.vue'
+
+//TODO : 20230111 신규버튼 추가
+import NonVerifyStep06Btn from '@/design/view/nonVerify/step06_btn.vue'
+
 import NonVerifyStep07 from '@/design/view/nonVerify/step07.vue'
 import NonVerifyStep08 from '@/design/view/nonVerify/step08.vue'
 
@@ -92,6 +96,10 @@ const routes = [
         component: NonVerifyStep06
       },
       {
+        path: 'step06_btn',
+        component: NonVerifyStep06Btn
+      },
+      {
         path: 'step07',
         component: NonVerifyStep07
       },
@@ -176,14 +184,6 @@ const routes = [
     path: '/guide',
     component: () => import('@/design/layout/ContentLayout.vue'),
     children: [
-      // {
-      //   path: 'intro',
-      //   component: CarePlanIntro
-      // },
-      // {
-      //   path: 'carePlan',
-      //   component: CarePlan
-      // },
       {
         path: 'guideDetail',
         component: guideDetail
